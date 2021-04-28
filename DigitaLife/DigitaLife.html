@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>DigitaLife</title>
+   <link rel="shortcut icon" type="img/jpg" href="img/p.png">
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/menu.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/slider.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/media.css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+   <header>
+      <!--Navbar-->
+      <div class="topnav" id="myTopnav">
+          <a href="DigitaLife.html" class="active"><i class="fa fa-home"></i> Home</a>
+          <a href="Products.html"><i class="fa fa-cart-arrow-down"></i> Products</a>
+          <a href="Credit.html"><i class="fa fa-percent"></i> Credit</a>
+          <a href="Contact.html"><i class="fa fa-phone"></i> Contact</a>
+          <a href="Cart.html" class="cart"><i class="fa fa-shopping-basket"> Cart</i><span id="cartValue"> 0</span></a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+      </div>
+  </header>
+   <!--Slideshow-->
+   <div class="slideshow-container">
+      <div class="mySlides fade">
+         <div class="numbertext">1 / 7</div>
+         <img class="slideimg" src="img/0.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">2 / 7</div>
+         <img class="slideimg" src="img/1.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">3 / 7</div>
+         <img class="slideimg" src="img/2.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">4 / 7</div>
+         <img class="slideimg" src="img/3.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">5 / 7</div>
+         <img class="slideimg" src="img/4.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">6 / 7</div>
+         <img class="slideimg" src="img/5.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">7 / 7</div>
+         <img class="slideimg" src="img/6.png" alt="">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+   <br>
+   <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+   </div>
+   <!-- Main section -->
+   <main id="main">
+      <!-- New arrivals -->
+      <div class="containers">
+         <section class="categories">
+            <div class="title-container">
+               <hr>
+               <h1 class="title">
+                  New arrivals
+               </h1>
+               <hr>
+            </div>
+            <div class="card">
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/msi.png" alt="img" class="card-img">
+                     <p class="item-name">MSI GF65 Thin Gaming 9SD-252US</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 1422</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/tucano.png" alt="img" class="card-img">
+                     <p class="item-name">Tucano BACKPACK RAPIDO15.6 ", Blue</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 25</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/m313.png" alt="img" class="card-img">
+                     <p class="item-name">MARVO "M313", 800-6400 DPI </p>
+                  </div>
+                  <h3 class="item-price">Price :$ 13</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/970evo.png" alt="img" class="card-img">
+                     <p class="item-name">SSD 1.0TB Samsung 970 EVO</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 162</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+            </div>
+         </section>
+         <!-- Popular goods -->
+         <section class="categories">
+            <div class="title-container">
+               <hr>
+               <h1 class="title">
+                  Popular goods
+               </h1>
+               <hr>
+            </div>
+            <div class="card">
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/bag3.png" alt="img" class="card-img">
+                     <p class="item-name">Xiaomi Simple Casual Backpack</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 21</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/asus.png" alt="img" class="card-img">
+                     <p class="item-name">NB ASUS 15.6" G512LW</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 1655</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/mouse4.png" alt="img" class="card-img">
+                     <p class="item-name">HYPERX Pulsefire, 400–6200 DPI</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 36</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/acer.png" alt="img" class="card-img">
+                     <p class="item-name">ACER Nitro AN515-55 Obsidian Black</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 1250</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+            </div>
+         </section>
+         <!-- Recommended -->
+         <!-- noatebooks -->
+         <section class="categories">
+            <div class="title-container">
+               <hr>
+               <h1 class="title">
+                  Recommended
+               </h1>
+               <hr>
+            </div>
+            <div class="card">
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/asus.png" alt="img" class="card-img">
+                     <p class="item-name">NB ASUS 15.6" G512LW</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 1655</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/acer.png" alt="img" class="card-img">
+                     <p class="item-name">ACER Nitro AN515-55 Obsidian Black</p>
+                     <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+                  </div>
+                  <h3 class="item-price">Price : $ 1250</h3>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/xiaomi.png" alt="img" class="card-img">
+                     <p class="item-name">Xiaomi 15.6" Mi Gaming Notebook</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 1170</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+               <div class="item-container">
+                  <div class="card-item">
+                     <img src="img/microsoft.png" alt="img" class="card-img">
+                     <p class="item-name">Microsoft Surface Pro 7 – 12.3"</p>
+                  </div>
+                  <h3 class="item-price">Price : $ 1338</h3>
+                  <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+               </div>
+            </div>
+         </section>
+         <!-- bags -->
+         <div class="card">
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/bag1.png" alt="img" class="card-img">
+                  <p class="item-name">RivaCase 5560 Black/Pure Red</p>
+               </div>
+               <h3 class="item-price">Price : $ 18</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/bag2.png" alt="img" class="card-img">
+                  <p class="item-name">RivaCase 8730 Grey Laptop</p>
+               </div>
+               <h3 class="item-price">Price : $ 19</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/bag3.png" alt="img" class="card-img">
+                  <p class="item-name">Xiaomi Simple Casual Backpack</p>
+               </div>
+               <h3 class="item-price">Price : $ 21</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/bag4.png" alt="img" class="card-img">
+                  <p class="item-name">RivaCase 8065 Dark Blue Laptop</p>
+               </div>
+               <h3 class="item-price">Price : $ 22</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+         </div>
+         <!-- mouse -->
+         <div class="card">
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/mouse1.png" alt="img" class="card-img">
+                  <p class="item-name">Logitech Wireless Mouse M310 Silver</p>
+               </div>
+               <h3 class="item-price">Price : $ 20</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/mouse2.png" alt="img" class="card-img">
+                  <p class="item-name">Razer Mouse DeathAdder Essential</p>
+               </div>
+               <h3 class="item-price">Price : $ 30</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/mouse3.png" alt="img" class="card-img">
+                  <p class="item-name">MARVO "M730W", 1200-3500dpi</p>
+               </div>
+               <h3 class="item-price">Price : $ 30</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/mouse4.png" alt="img" class="card-img">
+                  <p class="item-name">HYPERX Pulsefire, 400–6200 DPI</p>
+               </div>
+               <h3 class="item-price">Price : $ 36</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+         </div>
+         <!-- hard dick -->
+         <div class="card">
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/ssd1.png" alt="img" class="card-img">
+                  <p class="item-name">SSD 128GB ADATA XPG SX6000 Lite</p>
+               </div>
+               <h3 class="item-price">Price : $ 41</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/ssd2.png" alt="img" class="card-img">
+                  <p class="item-name">SSD 120GB Kingston A400</p>
+               </div>
+               <h3 class="item-price">Price : $ 32</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/ssd3.png" alt="img" class="card-img">
+                  <p class="item-name">SSD 120GB Kingston HyperX FURY 3D</p>
+               </div>
+               <h3 class="item-price">Price : $ 36</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/ssd4.png" alt="img" class="card-img">
+                  <p class="item-name">NVMe SSD 480GB Corsair Force MP510</p>
+               </div>
+               <h3 class="item-price">Price : $ 115</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go to shop</button>
+            </div>
+         </div>
+      </div>
+      <!-- Footer section -->
+      <footer id="footer" class="section footer">
+         <div class="container__footer">
+            <div class="footer__top">
+               <div class="footer-top__box">
+                  <h3>Know About Us</h3>
+                  <a href="https://atehno.md/spage/delivery-menu">Shipping and payment</a>
+                  <a href="https://atehno.md/spage/contacts-menu">Contacts and working hours</a>
+                  <a href="https://service.atehno.md/">Service-center</a>
+                  <a href="https://atehno.md/spage/service_centres">Authorized service centers</a>
+                  <a href="https://atehno.md/spage/credit-menu">Buy in credit</a>
+               </div>
+               <div class="footer-top__box">
+                  <h3>Contact Us</h3>
+                  <a href="https://vk.com/wall17263054_102"><i class="fa fa-vk"></i> VK</a>
+                  <a href="https://www.facebook.com/usarb.balti/"><i class="fa fa-facebook"></i> Facebook</a>
+                  <a href="https://www.instagram.com/explore/tags/usarb/"><i class="fa fa-instagram"></i> Instagram</a>
+                  <a href="https://www.youtube.com/channel/UC1s0JOdKAC_26tswxf7wZCQ"><i class="fa fa-youtube"></i>
+                     YouTube</a>
+               </div>
+               <div class="footer-top__box">
+                  <h3>Office Address</h3>
+                  <div>
+                     <span>
+                        <i class="fa fa-map-marker"></i>
+                     </span>
+                     Str. Pușkin, nr. 38, MD-3100 Bălți
+                  </div>
+                  <div>
+                     <span>
+                        <i class="fa fa-plane"></i>
+                     </span>
+                     Moldova, Bălți
+                  </div>
+                  <div>
+                     <span>
+                        <i class="fa fa-phone"></i>
+                     </span>
+                     Phone No : +373 231 52430
+                  </div>
+                  <div>
+                     <span>
+                        <i class="fa fa-envelope"></i>
+                     </span>
+                     anticamera@usarb.md
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__bottom">
+            <div class="footer-bottom__box"></div>
+            <div class="footer-bottom__box"></div>
+         </div>
+      </footer>
+      <script src='js/menu.js'></script>
+      <script src='js/slider.js'></script>
+   </main>
+</body>
+
+</html>
