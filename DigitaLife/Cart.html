@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cart</title>
+    <link rel="shortcut icon" type="img/jpg" href="img/p.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/menu.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/media.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <div class="topnav" id="myTopnav">
+            <a href="DigitaLife.html" class="active"><i class="fa fa-home"></i> Home</a>
+            <a href="Products.html"><i class="fa fa-cart-arrow-down"></i> Products</a>
+            <a href="Credit.html"><i class="fa fa-percent"></i> Credit</a>
+            <a href="Contact.html"><i class="fa fa-phone"></i> Contact</a>
+            <a href="Cart.html" class="cart"><i class="fa fa-shopping-basket"> Cart -</i><span id="cartValue">
+                    0</span></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="price">PRICE</h5>
+        </div>
+        <ul class="products">
+        </ul>
+        <div class="total__container">
+        </div>
+    </div>>
+
+    <!-- Command -->
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="Products.html">
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="fname"><i class="fa fa-user"></i> Enter your name:</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Andrei Lungu">
+                            <label for="email"><i class="fa fa-envelope"></i> Enter your email:</label>
+                            <input type="text" id="email" name="email" placeholder="Andrei@mail.ru">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Enter your address:</label>
+                            <input type="text" id="adr" name="address" placeholder="Stefan cel Mare 13/108">
+                            <label for="city"><i class="fa fa-institution"></i> Enter your city:</label>
+                            <input type="text" id="city" name="city" placeholder="Balti">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="index">Postal index:</label>
+                                    <input type="text" id="index" name="index" placeholder="1234">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip:</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <h1>BUY RIGHT NOW!!!</h1>
+                            <label for="cname">The name on the card:</label>
+                            <input type="text" id="cname" name="cardname" placeholder="LUNGU ANDREI">
+                            <label for="ccnum">Card number:</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1234-1234-1234-1234">
+                            <label for="expmonth">Expiration Month:</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="Mai">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Expiration Year:</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2021">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV:</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Continue shopping" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='js/menu.js'></script>
+    <script src='js/cart.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "DELL Inspiron",
+    "description": "DELL Inspiron Gaming 15 G5 Black (5500)+W10H, 15.6'' 300Hz WVA FHD300 nits (IntelCore i7-10750H, 2.6-5.0GHz, 16GB (2x8) DDR4 RAM, 1TB M.2 PCIe SSD, GeForce GTX  1660Ti 6GB GDDR6CR, WiFi6-AC/BT5, 4cell, HD Webcam,Win10H,2.34kg).",
+    "tag" : "note25",
+    "price" : 1970
+  },
+  {
+    "id": 2,
+    "name": "Apple MacBook Air",
+    "description": "Laptop Apple MacBook Air, 13.3'' Space Grey, Retina 2560x1600, Apple M1 8-Core, 8GB, SSD 256GB + B Intel® Optane, GPU Apple M1 7-Core, 802.11ax, 2xThunderbolt v3, 2xUSB4, 802.11ax, 2xThunderbolt v3,2xUSB4, Mac OS Big Sur, RU, 50Wh, 1.29Kg.",
+    "tag" : "note27",
+    "price" : 1920
+  },
+  {
+    "id": 3,
+    "name": "ASUS G712LW",
+    "description": "ASUS 17.3'' G712LW (Core i7-10750H 16Gb 512Gb), 17.3'' IPS FHD (1920x1080) 144Hz Non-glare, Intel Core i7-10750H (6x Core, 2.6GHz - 5.0GHz, 12Mb), 16Gb (2x 8Gb) PC4-23400, 512Gb M.2 PCIE, GeForce RTX 2070 8Gb,Illuminated RGB Keyboard, 2.8kg.",
+    "tag" : "note26",
+    "price" : 1850
+  },
+  {
+    "id": 4,
+    "name": "HP EliteBook",
+    "description": "HP EliteBook Dragonfly Convertible 13.3'' FHD Touch BV AG UWVA 1000nit (Intel® Core™ i5-8365U, 16GB LPDDR3, 512GB SSD PCIe NVMe+32GB Intel® Optane , Intel® UHD 620, Intel Wi-Fi 6 AX200+BT5, FPR, TB, 4 Cell 56WH, Galaxy Blue Magnesium, Win10Pro, 0.99kg).",
+    "tag" : "note28",
+    "price" : 1900
+  },
+  {
+    "id": 5,
+    "name": "HYPERX Pulsefire",
+    "description": "HYPERX Pulsefire Dart Wireless Gaming Mouse, up to 16000 DPI, 4 DPI presets, PMW3389 sensor, RGB Logo, Omron switches, Qi Wireless charging.",
+    "tag" : "mouse5",
+    "price" : 125
+  },
+  {
+    "id": 6,
+    "name": "RAZER Viper",
+    "description": "RAZER Viper Ultimate / Wireless Ergonomic Optical Gaming Mouse switches, 20000dpi, Razer™ Optical Mouse Switches 70 mln cycle.",
+    "tag" : "mouse6",
+    "price" : 135
+  },
+  {
+    "id": 7,
+    "name": "Logitech MX Master 2S",
+    "description": "Logitech Wireless Mouse MX Master 2S, 7 buttons, 4000 dpi, Darkfield high precision, Hyper-efficient scrolling, Effortless multi-computer workflow pair up to 3 devices.",
+    "tag" : "mouse7",
+    "price" : 145
+  },
+  {
+    "id": 8,
+    "name": "Logitech G604",
+    "description": "Logitech Gaming Mouse G604 Lightspeed Wireless, Bluetooth, High-speed, Hero 16K Gaming Sensor, 15 Programmable controls, 100-16000 dpi, 1ms report rate.",
+    "tag" : "mouse8",
+    "price" : 150
+  },
+  {
+    "id": 9,
+    "name": "Helmet Backpack",
+    "description": "Helmet Backpack Svago 15,6'' Black.",
+    "tag" : "bag5",
+    "price" : 35
+  },
+  {
+    "id": 10,
+    "name": "RivaCase Blue/Black",
+    "description": "NB backpack - RivaCase Blue/Black.",
+    "tag" : "bag6",
+    "price" : 40
+  },
+  {
+    "id": 11,
+    "name": "Xiaomi Mi City",
+    "description": "Xiaomi Mi City Sling Bag 10.5",
+    "tag" : "bag7",
+    "price" : 45
+  },
+  {
+    "id": 12,
+    "name": "BACKPACK Sport",
+    "description": "Tucano, BACKPACK Sport Mister Green.",
+    "tag" : "bag8",
+    "price" : 50
+  },
+  {
+    "id": 13,
+    "name": "4.0TB Samsung",
+    "description": ".2.5' SATA SSD 4.0TB Samsung 870 QVO MZ-77Q4T0BW [R/W:560/530MB/s, 98/88K IOPS, MJX, 4bit MLC].",
+    "tag" : "ssd5",
+    "price" : 350
+  },
+  {
+    "id": 14,
+    "name": "1.0TB ADATA XPG",
+    "description": ".M.2 NVMe SSD 1.0TB ADATA XPG GAMMIX S40G RGB [PCIe3.0x4, R/W:3500/3000MB/s, 220/290K].",
+    "tag" : "ssd6",
+    "price" : 250
+  },
+  {
+    "id": 15,
+    "name": "2.0TB Kingston",
+    "description": ".2.5' SSD 2.0TB Kingston KC600, SATAIII,SeqReads:550 MB/s, SeqWrites:520 MB/s, Max Random 4k.",
+    "tag" : "ssd7",
+    "price" : 300
+  },
+  {
+    "id": 16,
+    "name": "1.0TB Samsung",
+    "description": ".M.2 NVMe SSD 1.0TB Samsung SSD 980, PCIe3.0 x4 / NVMe1.4, M2 Type 2280 form factor, Seq. Read: 3500 MB/s, Seq.",
+    "tag" : "ssd8",
+    "price" : 200
+  },
+  {
+    "id": 17,
+    "name": "Cooling Pad Canyon",
+    "description": "Notebook Cooling Pad Canyon HNS02, up to 15.6 ', 1x125mm, LED backligh, Adjustable height, 2xUSB 2.0, Suitable for 10 '- 15.6' laptops, Better heat dissipation, Increased system stability, Low power consumption, Long battery life laptop, 2xUSB 2.0.",
+    "tag" : "cooling1",
+    "price" : 35
+  },
+  {
+    "id": 18,
+    "name": "Cooling Pad Gembird",
+    "description": "Notebook Cooling Pad Gembird ACT-NS151F, up to 15'', 1x120 mm fan, LED light, USB passthroug, Material metal and plastic (ABS), Cooling fans 1 pc, 1000 RPM (±10 %), airflow 23 CFM (± 10 %), Fan diameter 120 mm, USB cable length 0.4 m, USB connector : passthrough type.",
+    "tag" : "cooling2",
+    "price" : 40
+  },
+  {
+    "id": 19,
+    "name": "Gembird NBS-2F15-01k",
+    "description": "Suport p/u laptop Gembird NBS-2F15-01k, 1x120 mm fan, LED light, USB passthroug, Material metal and plastic (ABS), Cooling fans 1 pc, 1000 RPM (±10 %), airflow 23 CFM (± 10 %), Fan diameter 120 mm, USB cable length 0.4 m, USB connector : passthrough type (in/out).",
+    "tag" : "cooling3",
+    "price" : 45
+  },
+  {
+    "id": 20,
+    "name": "Cooling Pad Gembird",
+    "description": "Notebook Cooling Pad Gembird NBS-2F15-02, up to 15.6'', 2x125mm fan, Adjustable angle, LED light, Material: plastic and iron mesh, Cooling fans: 2 pcs, 1000 RPM (± 10 %), noise 20 dBa, Fan diameter: 125 x 125 x 15 mm, Dimensions (LxWxH): 355 x 255 x 30 mm (folded).",
+    "tag" : "cooling4",
+    "price" : 50
+  },
+  {
+    "id": 21,
+    "name": "Charger For Acer",
+    "description": "AC Adapter Charger For Acer 19V-3.42A (65W) Round DC Jack 5.5*1.7mm inside Original.",
+    "tag" : "charger1",
+    "price" : 40
+  },
+  {
+    "id": 22,
+    "name": "Charger For HP",
+    "description": "AC Adapter Charger For HP 19.5V-3.33A (65W) Round DC Jack 4,5*3,0mm w/pin inside Original.",
+    "tag" : "charger2",
+    "price" : 35
+  },
+  {
+    "id": 23,
+    "name": "Charger For ASUS",
+    "description": "AC Adapter Charger For ASUS 18.5V-3.5A (65W) Round DC Jack 7.4*5.0mm w/pin inside Original.",
+    "tag" : "charger3",
+    "price" : 50
+  },
+  {
+    "id": 24,
+    "name": "Charger For Samsung",
+    "description": "AC Adapter Charger For Samsung 19V-4.74V (90W) Round DC Jack 5.3*3.0mm w/pin inside Original.",
+    "tag" : "charger4",
+    "price" : 45
+  }
+]
