@@ -28,8 +28,8 @@ class Main {
             container.innerHTML += `
             <div class="item-container" data-id="${product.id}">
                   <div class="card-item">
+                  <p class="item-name">${product.name}</p>
                      <img src="img/${product.tag}.png" alt="img" class="card-img">
-                     <p class="item-name">${product.name}</p>
                      <p class="item-description">${product.description}</p>
                   </div>
                   <h3 class="item-price">Price : $ <span class="item-price-value">${product.price}</span></h3>
@@ -101,12 +101,3 @@ document.addEventListener("DOMContentLoaded", () => {
     const main = new Main();
     main.init().then(_ => _);
 });
-
-/* Buton credit */
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-}

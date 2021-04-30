@@ -38,61 +38,65 @@
         </ul>
         <div class="total__container">
         </div>
-    </div>>
+    </div>
 
     <!-- Command -->
     <div class="row">
         <div class="col-75">
             <div class="container">
-                <form action="Products.html">
-                    <div class="row">
-                        <div class="col-50">
-                            <label for="fname"><i class="fa fa-user"></i> Enter your name:</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Andrei Lungu">
-                            <label for="email"><i class="fa fa-envelope"></i> Enter your email:</label>
-                            <input type="text" id="email" name="email" placeholder="Andrei@mail.ru">
-                            <label for="adr"><i class="fa fa-address-card-o"></i> Enter your address:</label>
-                            <input type="text" id="adr" name="address" placeholder="Stefan cel Mare 13/108">
-                            <label for="city"><i class="fa fa-institution"></i> Enter your city:</label>
-                            <input type="text" id="city" name="city" placeholder="Balti">
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="index">Postal index:</label>
-                                    <input type="text" id="index" name="index" placeholder="1234">
-                                </div>
-                                <div class="col-50">
-                                    <label for="zip">Zip:</label>
-                                    <input type="text" id="zip" name="zip" placeholder="10001">
-                                </div>
+                <!--   <form action="Products.html"> -->
+                <div class="row">
+                    <div class="col-50">
+                        <label for="fname"><i class="fa fa-user"></i> Enter your name:</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Andrei Lungu">
+                        <label for="email"><i class="fa fa-envelope"></i> Enter your email:</label>
+                        <input type="text" id="email" name="email" placeholder="Andrei@mail.ru">
+                        <label for="adr"><i class="fas fa-address-card"></i> Enter your address:</label>
+                        <input type="text" id="adr" name="address" placeholder="Stefan cel Mare 13/108">
+                        <label for="city"><i class="fas fa-city"></i> Enter your city:</label>
+                        <input type="text" id="city" name="city" placeholder="Balti">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="index"><i class="fa fa-envelope"></i> Postal index:</label>
+                                <input type="text" id="index" name="index" placeholder="1234">
+                                <button class="btn1" onclick="goshop()"><i class="fas fa-cart-plus"></i> Continue
+                                    shopping</button>
+                                <button class="btn2" onclick="purchase()"><i class="fa fa-credit-card"></i> Purchase
+                                    now</button>
                             </div>
-                        </div>
-                        <div class="col-50">
-                            <h1>BUY RIGHT NOW!!!</h1>
-                            <label for="cname">The name on the card:</label>
-                            <input type="text" id="cname" name="cardname" placeholder="LUNGU ANDREI">
-                            <label for="ccnum">Card number:</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1234-1234-1234-1234">
-                            <label for="expmonth">Expiration Month:</label>
-                            <input type="text" id="expmonth" name="expmonth" placeholder="Mai">
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="expyear">Expiration Year:</label>
-                                    <input type="text" id="expyear" name="expyear" placeholder="2021">
-                                </div>
-                                <div class="col-50">
-                                    <label for="cvv">CVV:</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="123">
-                                </div>
+                            <div class="col-50">
+                                <label for="zip"><i class="fas fa-file-archive"></i> Zip:</label>
+                                <input type="text" id="zip" name="zip" placeholder="10001">
                             </div>
                         </div>
                     </div>
-                    <input type="submit" value="Continue shopping" class="btn">
+                    <div class="col-50">
+                        <h1>BUY RIGHT NOW!!!</h1>
+                        <label for="cname"><i class="fa fa-credit-card"></i> The name on the card:</label>
+                        <input type="text" id="cname" name="cardname" placeholder="LUNGU ANDREI">
+                        <label for="ccnum"><i class="fa fa-credit-card"></i> Card number:</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1234-1234-1234-1234">
+                        <label for="expmonth"><i class="fa fa-credit-card"></i> Expiration Month:</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="Mai">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear"><i class="far fa-calendar-check"></i> Expiration Year:</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2021">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv"><i class="fa fa-credit-card"></i> CVV:</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
     </div>
     <script src='js/menu.js'></script>
     <script src='js/cart.js'></script>
+    <script src='js/buttonclick.js'></script>
 </body>
 
 </html>
