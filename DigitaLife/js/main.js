@@ -20,7 +20,7 @@ class Main {
             })
         });
     }
-    
+
     showProducts() {
         const container = document.getElementById("cardItems");
 
