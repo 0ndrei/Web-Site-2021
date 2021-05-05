@@ -515,7 +515,7 @@ iframe {
   padding: 0 16px;
 }
 
-input[type="text"] {
+input[type="text"], select {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -606,3 +606,6 @@ a {
   font-weight: 400;
   margin-bottom: 1rem;
 }
+
+
+
