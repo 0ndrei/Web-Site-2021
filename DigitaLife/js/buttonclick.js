@@ -11,7 +11,3 @@ function closeForm() {
 function goshop() {
     location.replace("Products.html");
 }
-/* Buton purchase */
-function purchase() {
-    alert("Your data has been entered correctly, the order has been given. Congratulations!!!");
-}

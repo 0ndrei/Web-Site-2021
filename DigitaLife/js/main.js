@@ -25,16 +25,7 @@ class Main {
         const container = document.getElementById("cardItems");
 
         this.products.forEach(product => {
-            container.innerHTML += `
-            <div class="item-container" data-id="${product.id}">
-                  <div class="card-item">
-                  <p class="item-name">${product.name}</p>
-                     <img src="img/${product.tag}.png" alt="img" class="card-img">
-                     <p class="item-description">${product.description}</p>
-                  </div>
-                  <h3 class="item-price">Price : $ <span class="item-price-value">${product.price}</span></h3>
-                  <a class="add-cart"><em class="fa fa-shopping-basket add-to-cart"></em></a>
-               </div>`
+            container.innerHTML += Template.shopProduct(product);
         });
     }
 

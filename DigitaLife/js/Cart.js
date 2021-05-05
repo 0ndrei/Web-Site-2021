@@ -1,35 +1,12 @@
 class Cart {
     cart = JSON.parse(localStorage.getItem("cart")) || [];
+    _shippingPrice = 0;
 
     showCart() {
         const cartContainer = document.querySelector('.products');
 
         this.cart.forEach(product => {
-            cartContainer.innerHTML += `
-            <li data-id="${product.id}">
-                  <div class="remove__btn">
-                     <em class="fas fa-trash-alt remove__item"></em>
-                  </div>
-        
-                  <div class="product__img">
-                     <img src="./${product.image}" alt="">
-                  </div>
-        
-                  <div class="product__name">
-                     <span>${product.name}</span>
-                  </div>
-        
-                  <div class="product__quantity">
-                     <em class="fas fa-minus-circle decrease__item"></em>
-                     <span>${product.quantity}</span>
-                     <em class="fas fa-plus-circle increase__item"></em>
-                  </div>
-                  
-                  <div class="product__price">
-                     $<span>${product.price}</span>
-                  </div>
-             </li>
-           `
+            cartContainer.innerHTML += Template.cartProduct(product);
         });
         const totalContainer = document.querySelector(".total__container");
 
@@ -37,14 +14,66 @@ class Cart {
         <div class="basketTotalContainer">
             <h4 class="basketTotalTitle">Basket Total</h4>
             <h4 class="basketTotal">${this.sumOfCart()} $</h4>
-        </div>
-        `
+        </div>`
+    }
+
+    showSum(value) {
+        document.querySelector('.basketTotal').innerHTML = `${value} $`
     }
 
     sumOfCart() {
         return this.cart.reduce((accumulator, value) => {
             return accumulator + value.quantity * value.price
-        }, 0)
+        }, 0) + this._shippingPrice
+    }
+
+    validationHandler() {
+        const validateButton = document.getElementById('order__items');
+
+        this.validateName();
+
+        validateButton.addEventListener('click', () => {
+            this.validateData();
+        })
+    }
+
+    validateName() {
+        const fullName = document.getElementById('full__name');
+        const city = document.getElementById('city');
+
+        [fullName, city].forEach(element => {
+            element.addEventListener('keyup', () => {
+                element.value = element.value.replace(/[^a-zA-Z]/g, '')
+            })
+        });
+    }
+
+    optionHandler() {
+        const selector = document.getElementById('delivery');
+        selector.onchange = ((evt) => {
+            this._shippingPrice = parseInt(evt.target.value);
+            this.showSum(this.sumOfCart());
+        });
+    }
+
+    validateData() {
+        const phoneNumber = document.getElementById('phone');
+        const address = document.getElementById('address');
+
+        const addressRegexp = /^[a-zA-Z0-9\s,'-]{4,}$/;
+        const phoneRegexp = /^[\+373|373]*[0]*[0-9]{7,8}$/;
+
+        if (!(new RegExp(addressRegexp).test(address.value) && address.value.length < 20)) {
+            console.log("Wrong Address");
+            return;
+        }
+
+        if (!(new RegExp(phoneRegexp).test(phoneNumber.value))) {
+            console.log("Wrong Phone Number");
+            return;
+        }
+
+        console.log("Data Successfully Sent");
     }
 
     removeMulti() {
@@ -75,14 +104,12 @@ class Cart {
     }
 
     increaseQuantity(evt) {
-        const totalPrice = document.querySelector(".basketTotal");
-
         const id = Number(evt.target.parentElement.parentElement.getAttribute("data-id"));
         this.cart.map(item => {
             if (item.id === id) {
                 item.quantity++;
                 evt.target.parentElement.querySelector("span").innerHTML = `${item.quantity}`;
-                totalPrice.innerHTML = `${this.sumOfCart()}$`
+                this.showSum(this.sumOfCart());
             }
         });
         this.showCartCount(this.getCartQuantity());
@@ -90,14 +117,13 @@ class Cart {
     }
 
     decreaseQuantity(evt) {
-        const totalPrice = document.querySelector(".basketTotal");
         const id = Number(evt.target.parentElement.parentElement.getAttribute("data-id"));
         this.cart.map(item => {
             if (item.id === id) {
                 if (item.quantity === 1) return;
                 item.quantity--;
                 evt.target.parentElement.querySelector("span").innerHTML = `${item.quantity}`;
-                totalPrice.innerHTML = `${this.sumOfCart()}$`
+                this.showSum(this.sumOfCart());
             }
         });
         this.showCartCount(this.getCartQuantity());
@@ -135,6 +161,8 @@ document.addEventListener("DOMContentLoaded", () => {
     cart.showCartCount(cart.getCartQuantity());
     cart.removeMulti();
     cart.quantityHandler();
+    cart.validationHandler();
+    cart.optionHandler();
 });
 
 

@@ -17,14 +17,14 @@
     <header>
         <!--Navbar-->
         <div class="topnav" id="myTopnav">
-            <a href="DigitaLife.html" class="active"><i class="fa fa-home"></i> Home</a>
-            <a href="Products.html"><i class="fa fa-cart-arrow-down"></i> Products</a>
-            <a href="Credit.html"><i class="fa fa-percent"></i> Credit</a>
-            <a href="Contact.html"><i class="fa fa-phone"></i> Contact</a>
-            <a href="Cart.html" class="cart"><i class="fa fa-shopping-basket"> Cart -</i><span id="cartValue">
+            <a href="DigitaLife.html" class="active"><em class="fa fa-home"></em> Home</a>
+            <a href="Products.html"><em class="fa fa-cart-arrow-down"></em> Products</a>
+            <a href="Credit.html"><em class="fa fa-percent"></em> Credit</a>
+            <a href="Contact.html"><em class="fa fa-phone"></em> Contact</a>
+            <a href="Cart.html" class="cart"><em class="fa fa-shopping-basket"> Cart -</em><span id="cartValue">
                     0</span></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <em class="fa fa-bars"></em>
             </a>
         </div>
     </header>
@@ -47,27 +47,25 @@
                 <div class="row">
                     <div class="col-50">
                         <h1>BUY RIGHT NOW!!!</h1>
-                        <label for="fname"><i class="fa fa-user"></i> Enter your name:</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Andrei Lungu">
-                        <label for="email"><i class="fa fa-envelope"></i> Enter your email:</label>
-                        <input type="text" id="email" name="email" placeholder="Andrei@mail.ru">
-                        <label for="phone"><i class="fa fa-phone"></i> Enter your phone:</label>
+                        <label for="full__name"><em class="fa fa-user"></em> Enter your name:</label>
+                        <input type="text" id="full__name" name="firstname" placeholder="Andrei Lungu">
+                        <label for="phone"><em class="fa fa-phone"></em> Enter your phone:</label>
                         <input type="text" id="phone" name="phone" placeholder="+37369098833">
-                        <label for="adr"><i class="fas fa-address-card"></i> Enter your address:</label>
-                        <input type="text" id="adr" name="address" placeholder="Stefan cel Mare 13/108">
-                        <label for="city"><i class="fas fa-city"></i> Enter your city:</label>
+                        <label for="address"><em class="fas fa-address-card"></em> Enter your address:</label>
+                        <input type="text" id="address" name="address" placeholder="Stefan cel Mare 13/108">
+                        <label for="city"><em class="fas fa-city"></em> Enter your city:</label>
                         <input type="text" id="city" name="city" placeholder="Balti">
                         <div class="row">
                             <div class="col-50">
-                                <label for="delivery"><i class="fas fa-shipping-fast"></i> Delivery</label>
+                                <label for="delivery"><em class="fas fa-shipping-fast"></em> Delivery</label>
                                 <select id="delivery" name="delivery">
-                                    <option value="Posta Moldovei">Posta Moldovei | Price: $ 0</option>
-                                    <option value="DHL">DHL | Price: $ 5</option>
-                                    <option value="UPS Express">UPS Express | Price: $ 10</option>
+                                    <option value="0" selected="selected">Posta Moldovei | Price: $ 0</option>
+                                    <option value="5">DHL | Price: $ 5</option>
+                                    <option value="10">UPS Express | Price: $ 10</option>
                                 </select>
-                                <button class="btn1" onclick="goshop()"><i class="fas fa-cart-plus"></i> Continue
+                                <button class="btn1" onclick="goshop()"><em class="fas fa-cart-plus"></em> Continue
                                     shopping</button>
-                                <button class="btn2" onclick="purchase()"><i class="fa fa-credit-card"></i> Purchase
+                                <button class="btn2" id="order__items"><em class="fa fa-credit-card"></em> Purchase
                                     now</button>
                             </div>
                         </div>
@@ -76,6 +74,7 @@
             </div>
         </div>
     </div>
+    <script src="js/Template.js"></script>
     <script src='js/menu.js'></script>
     <script src='js/cart.js'></script>
     <script src='js/buttonclick.js'></script>
