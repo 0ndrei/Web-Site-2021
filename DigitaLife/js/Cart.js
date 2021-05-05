@@ -1,7 +1,7 @@
 class Cart {
     cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    renderCart() {
+    showCart() {
         const cartContainer = document.querySelector('.products');
 
         this.cart.forEach(product => {
@@ -47,7 +47,7 @@ class Cart {
         }, 0)
     }
 
-    removeHandler() {
+    removeMulti() {
         const btns = document.querySelectorAll('.remove__item');
 
         btns.forEach(button => {
@@ -85,7 +85,7 @@ class Cart {
                 totalPrice.innerHTML = `${this.sumOfCart()}$`
             }
         });
-        this.renderCartCount(this.getCartQuantity());
+        this.showCartCount(this.getCartQuantity());
         localStorage.setItem("cart", JSON.stringify(this.cart));
     }
 
@@ -100,7 +100,7 @@ class Cart {
                 totalPrice.innerHTML = `${this.sumOfCart()}$`
             }
         });
-        this.renderCartCount(this.getCartQuantity());
+        this.showCartCount(this.getCartQuantity());
         localStorage.setItem("cart", JSON.stringify(this.cart));
     }
 
@@ -113,12 +113,12 @@ class Cart {
 
         evt.target.parentElement.parentElement.remove();
 
-        this.renderCartCount(this.getCartQuantity());
+        this.showCartCount(this.getCartQuantity());
         localStorage.setItem("cart", JSON.stringify(this.cart));
         document.querySelector(".basketTotal").innerHTML = `${this.sumOfCart()} $`;
     }
 
-    renderCartCount(value) {
+    showCartCount(value) {
         document.getElementById("cartValue").innerHTML = `${value}`;
     }
 
@@ -131,9 +131,9 @@ class Cart {
 
 document.addEventListener("DOMContentLoaded", () => {
     const cart = new Cart();
-    cart.renderCart();
-    cart.renderCartCount(cart.getCartQuantity());
-    cart.removeHandler();
+    cart.showCart();
+    cart.showCartCount(cart.getCartQuantity());
+    cart.removeMulti();
     cart.quantityHandler();
 });
 

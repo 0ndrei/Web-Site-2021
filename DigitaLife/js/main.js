@@ -8,8 +8,8 @@ class Main {
 
     async init() {
         this.products = await this.loadJSON();
-        this.renderProducts();
-        this.renderCartCount(this.getCartQuantity());
+        this.showProducts();
+        this.showCartCount(this.getCartQuantity());
         this.cartMulti();
     }
 
@@ -21,7 +21,7 @@ class Main {
         });
     }
     
-    renderProducts() {
+    showProducts() {
         const container = document.getElementById("cardItems");
 
         this.products.forEach(product => {
@@ -68,7 +68,7 @@ class Main {
                 }
             );
         localStorage.setItem("cart", JSON.stringify(this.cart));
-        this.renderCartCount(this.getCartQuantity());
+        this.showCartCount(this.getCartQuantity());
     }
 
     modifyQuantity(id) {
@@ -85,7 +85,7 @@ class Main {
         return element.id === this.id;
     }
 
-    renderCartCount(value) {
+    showCartCount(value) {
         document.getElementById("cartValue").innerHTML = `${value}`;
     }
 
