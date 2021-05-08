@@ -25,7 +25,7 @@ class Main {
         const container = document.getElementById("cardItems");
 
         this.products.forEach(product => {
-            container.innerHTML += Template.shopProduct(product);
+            container.innerHTML += template.shopProduct(product);
         });
     }
 

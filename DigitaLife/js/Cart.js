@@ -6,7 +6,7 @@ class Cart {
         const cartContainer = document.querySelector('.products');
 
         this.cart.forEach(product => {
-            cartContainer.innerHTML += Template.cartProduct(product);
+            cartContainer.innerHTML += template.cartProduct(product);
         });
         const totalContainer = document.querySelector(".total__container");
 
@@ -30,23 +30,12 @@ class Cart {
     validationHandler() {
         const validateButton = document.getElementById('order__items');
 
-        this.validateName();
 
         validateButton.addEventListener('click', () => {
             this.validateData();
         })
     }
 
-    validateName() {
-        const fullName = document.getElementById('full__name');
-        const city = document.getElementById('city');
-
-        [fullName, city].forEach(element => {
-            element.addEventListener('keyup', () => {
-                element.value = element.value.replace(/[^a-zA-Z]/g, '')
-            })
-        });
-    }
 
     optionHandler() {
         const selector = document.getElementById('delivery');
@@ -59,12 +48,21 @@ class Cart {
     validateData() {
         const phoneNumber = document.getElementById('phone');
         const address = document.getElementById('address');
-
+        const email = document.getElementById("email");
+        const city = document.getElementById("city");
         const addressRegexp = /^[a-zA-Z0-9\s,'-]{4,}$/;
         const phoneRegexp = /^[\+373|373]*[0]*[0-9]{7,8}$/;
+        const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        const cityRegexp = /^[a-zA-z] ?([a-zA-z]|[a-zA-z] )*[a-zA-z]$/;
+        const full__name = document.getElementById("full__name");
 
         if (!(new RegExp(addressRegexp).test(address.value) && address.value.length < 20)) {
             console.log("Wrong Address");
+            return;
+        }
+
+        if (!(new RegExp(/^[a-zA-Z ]{2,30}$/).test(full__name.value))) {
+            console.log("Wrong Name");
             return;
         }
 
@@ -73,7 +71,17 @@ class Cart {
             return;
         }
 
-        console.log("Data Successfully Sent");
+        if (!(new RegExp(emailRegexp).test(email.value))) {
+            console.log("Wrong Email");
+            return;
+        }
+
+        if (!(new RegExp(cityRegexp).test(city.value))) {
+            console.log("Wrong City");
+            return;
+        }
+
+        alert("Your order has been taken over by the administrator and you will be called soon.");
     }
 
     removeMulti() {
