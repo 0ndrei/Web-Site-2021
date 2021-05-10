@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>DigitaLife</title>
+   <link rel="shortcut icon" type="img/jpg" href="img/p.png">
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/menu.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/slider.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='css/media.css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+   <header>
+      <!--Navbar-->
+      <div class="topnav" id="myTopnav">
+         <a href="DigitaLife.html" class="active"><em class="fa fa-home"></em> Home</a>
+         <a href="Products.html"><em class="fa fa-cart-arrow-down"></em> Products</a>
+         <a href="Credit.html"><em class="fa fa-percent"></em> Credit</a>
+         <a href="Contact.html"><em class="fa fa-phone"></em> Contact</a>
+         <a href="Cart.html" class="cart"><em class="fa fa-shopping-basket"> Cart - </em><span id="cartValue">
+               0</span></a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <em class="fa fa-bars"></em>
+         </a>
+      </div>
+   </header>
+   <!--Slideshow-->
+   <div class="slideshow-container">
+      <div class="mySlides fade">
+         <div class="numbertext">1 / 7</div>
+         <img class="slideimg" src="img/0.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">2 / 7</div>
+         <img class="slideimg" src="img/1.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">3 / 7</div>
+         <img class="slideimg" src="img/2.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">4 / 7</div>
+         <img class="slideimg" src="img/3.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">5 / 7</div>
+         <img class="slideimg" src="img/4.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">6 / 7</div>
+         <img class="slideimg" src="img/5.png" alt="">
+      </div>
+      <div class="mySlides fade">
+         <div class="numbertext">7 / 7</div>
+         <img class="slideimg" src="img/6.png" alt="">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+   <br>
+   <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+   </div>
+   <!-- Main section -->
+   <main class="container-index">
+      <div class="left-column">
+         <img data-image="red" class="active-index" src="img/msitop.png" alt="">
+      </div>
+      <div class="right-column">
+         <div class="index-description">
+            <span>notebook</span>
+            <h1>MSI GT76 Titan</h1>
+            <p>The one that is the most adaptable to change is the one that survive and evolve. Choose the Dragon Spirit
+               and evolve with the latest MSI Gaming Laptops equipped with 10th Gen. Intel® Core™ i9 processors (Comet
+               Lake H) & latest GeForce® RTX graphics designed for gamers with style. Head first into the New
+               Generation.</p>
+         </div>
+         <div class="product-configuration">
+            <div class="ssd-config">
+               <span>SSD configuration</span>
+               <div class="ssd-choose">
+                  <button>512GB</button>
+                  <button>1T</button>
+                  <button>4T</button>
+                  <button>10T</button>
+               </div>
+               <a href="https://www.msi.com/Landing/2020-Gaming-laptops-evolve/nb">How to configure your notebook</a>
+            </div>
+         </div>
+         <div class="index-price">
+            <span>SOON</span>
+            <a href="Products.html" class="cart-btn">Go shopping</a>
+         </div>
+      </div>
+   </main>
+   <!-- Products waiting -->
+   <div class="containers">
+      <section class="categories">
+         <div class="title-container">
+            <hr>
+            <h2 class="title">
+               Products waiting
+            </h2>
+            <hr>
+         </div>
+         <div class="card">
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/msi.png" alt="img" class="card-img">
+                  <p class="item-name-index">MSI GF65 Thin Gaming 9SD-252US</p>
+               </div>
+               <h3 class="item-price">SOON</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go shopping</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/tucano.png" alt="img" class="card-img">
+                  <p class="item-name-index">Tucano BACKPACK RAPIDO15.6 ", Blue</p>
+               </div>
+               <h3 class="item-price">SOON</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go shopping</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/m313.png" alt="img" class="card-img">
+                  <p class="item-name-index">MARVO "M313", 800-6400 DPI </p>
+               </div>
+               <h3 class="item-price">SOON</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go shopping</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/970evo.png" alt="img" class="card-img">
+                  <p class="item-name-index">SSD 1.0TB Samsung 970 EVO</p>
+               </div>
+               <h3 class="item-price">SOON</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go shopping</button>
+            </div>
+         </div>
+      </section>
+      <!-- Popular products waiting -->
+      <section class="categories">
+         <div class="title-container">
+            <hr>
+            <h2 class="title">
+               Popular products waiting
+            </h2>
+            <hr>
+         </div>
+         <div class="card">
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/bag3.png" alt="img" class="card-img">
+                  <p class="item-name-index">Xiaomi Simple Casual Backpack</p>
+               </div>
+               <h3 class="item-price">SOON</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go shopping</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/asus.png" alt="img" class="card-img">
+                  <p class="item-name-index">NB ASUS 15.6" G512LW</p>
+               </div>
+               <h3 class="item-price">SOON</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go shopping</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/mouse4.png" alt="img" class="card-img">
+                  <p class="item-name-index">HYPERX Pulsefire, 400–6200 DPI</p>
+               </div>
+               <h3 class="item-price">SOON</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go shopping</button>
+            </div>
+            <div class="item-container">
+               <div class="card-item">
+                  <img src="img/acer.png" alt="img" class="card-img">
+                  <p class="item-name-index">ACER Nitro AN515-55 Obsidian Black</p>
+               </div>
+               <h3 class="item-price">SOON</h3>
+               <button class="buttongotoshop" onclick="goshop()">Go shopping</button>
+            </div>
+         </div>
+      </section>
+   </div>
+   <!-- Footer section -->
+   <footer id="footer" class="section footer">
+      <div class="container-footer">
+         <div class="footer-top">
+            <div class="footer-top-box">
+               <h3>Know About Us</h3>
+               <a href="https://atehno.md/spage/delivery-menu">Shipping and payment</a>
+               <a href="https://atehno.md/spage/contacts-menu">Contacts and working hours</a>
+               <a href="https://service.atehno.md/">Service-center</a>
+               <a href="https://atehno.md/spage/service_centres">Authorized service centers</a>
+               <a href="https://atehno.md/spage/credit-menu">Buy in credit</a>
+            </div>
+            <div class="footer-top-box">
+               <h3>Contact Us</h3>
+               <a href="https://vk.com/wall17263054_102"><em class="fa fa-vk"></em> VK</a>
+               <a href="https://www.facebook.com/usarb.balti/"><em class="fa fa-facebook"></em> Facebook</a>
+               <a href="https://www.instagram.com/explore/tags/usarb/"><em class="fa fa-instagram"></em>
+                  Instagram</a>
+               <a href="https://www.youtube.com/channel/UC1s0JOdKAC_26tswxf7wZCQ"><em class="fa fa-youtube"></em>
+                  YouTube</a>
+            </div>
+            <div class="footer-top-box">
+               <h3>Office Address</h3>
+               <div>
+                  <span>
+                     <em class="fa fa-map-marker"></em>
+                  </span>
+                  Str. Pușkin, nr. 38, MD-3100 Bălți
+               </div>
+               <div>
+                  <span>
+                     <em class="fa fa-plane"></em>
+                  </span>
+                  Moldova, Bălți
+               </div>
+               <div>
+                  <span>
+                     <em class="fa fa-phone"></em>
+                  </span>
+                  Phone No : +373 231 52430
+               </div>
+               <div>
+                  <span>
+                     <em class="fa fa-envelope"></em>
+                  </span>
+                  anticamera@usarb.md
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <div class="footer-bottom-box"></div>
+         <div class="footer-bottom-box"></div>
+      </div>
+   </footer>
+   <script src='js/menu.js'></script>
+   <script src="js/digitaLife.js"></script>
+   <script src='js/slider.js'></script>
+   <script src='js/buttonclick.js'></script>
+</body>
+
+</html>
