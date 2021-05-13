@@ -45,20 +45,15 @@ class Cart {
     }
 
     validateData() {
+        const full__name = document.getElementById("full__name");
         const phoneNumber = document.getElementById('phone');
-        const address = document.getElementById('address');
         const email = document.getElementById("email");
+        const address = document.getElementById('address');
         const city = document.getElementById("city");
         const addressRegexp = /^[a-zA-Z0-9\s,'-]{4,}$/;
         const phoneRegexp = /^[\+373|373]*[0]*[0-9]{7,8}$/;
         const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         const cityRegexp = /^[a-zA-z] ?([a-zA-z]|[a-zA-z] )*[a-zA-z]$/;
-        const full__name = document.getElementById("full__name");
-
-        if (!(new RegExp(addressRegexp).test(address.value) && address.value.length < 20)) {
-            console.log("Wrong Address");
-            return;
-        }
 
         if (!(new RegExp(/^[a-zA-Z ]{2,30}$/).test(full__name.value))) {
             console.log("Wrong Name");
@@ -72,6 +67,11 @@ class Cart {
 
         if (!(new RegExp(emailRegexp).test(email.value))) {
             console.log("Wrong Email");
+            return;
+        }
+
+        if (!(new RegExp(addressRegexp).test(address.value) && address.value.length < 20)) {
+            console.log("Wrong Address");
             return;
         }
 

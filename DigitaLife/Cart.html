@@ -41,40 +41,53 @@
     </div>
 
     <!-- Command -->
-    <div class="row">
-        <div class="col-75">
-            <div class="container">
-                <div class="row">
-                    <div class="col-50">
-                        <h1>BUY RIGHT NOW!!!</h1>
-                        <label for="full__name"><em class="fa fa-user"></em> Enter your name:</label>
-                        <input type="text" id="full__name" name="firstname" placeholder="Andrei Lungu">
-                        <label for="phone"><em class="fa fa-phone"></em> Enter your phone:</label>
-                        <input type="text" id="phone" name="phone" placeholder="+37369098833">
-                        <label for="email"><i class="fa fa-envelope"></i> Enter your email</label>
-                        <input type="email" id="email" name="email" placeholder="Andrei@mail.ru">
-                        <label for="address"><em class="fas fa-address-card"></em> Enter your address:</label>
-                        <input type="text" id="address" name="address" placeholder="Stefan cel Mare 13/108">
-                        <label for="city"><em class="fas fa-city"></em> Enter your city:</label>
-                        <input type="text" id="city" name="city" placeholder="Balti">
-                        <label for="comment"><em class="fas fa-comment"></em> Enter your comment:</label>
-                        <input type="text" id="comment" name="comment" placeholder="Pack the product better please !!!">
-                        <div class="row">
-                            <div class="col-50">
-                                <label for="delivery"><em class="fas fa-shipping-fast"></em> Delivery</label>
-                                <select id="delivery" name="delivery">
-                                    <option value="0" selected="selected">Posta Moldovei | 2-3 days | Price: $ 0
-                                    </option>
-                                    <option value="5">DHL | 1-2 days| Price: $ 5</option>
-                                    <option value="10">UPS Express| 1 day | Price: $ 10</option>
-                                </select>
-                                <button class="btn1" onclick="goshop()"><em class="fas fa-cart-plus"></em> Continue
-                                    shopping</button>
-                                <button class="btn2" id="order__items"><em class="fa fa-credit-card"></em> Purchase
-                                    now</button>
+    <div class="containers">
+        <div class="row">
+            <div class="colsection">
+                <button class="open-button" onclick="openForm()">BUY RIGHT NOW!!!</button>
+                <div class="form-popup" id="myForm">
+                    <section class="form-container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="coldelivery">
+                                    <h1>BUY RIGHT NOW!!!</h1>
+                                    <label for="full__name"><em class="fa fa-user"></em> Enter your name:</label>
+                                    <input type="text" id="full__name" name="firstname" placeholder="Andrei Lungu">
+                                    <label for="phone"><em class="fa fa-phone"></em> Enter your phone:</label>
+                                    <input type="text" id="phone" name="phone" placeholder="+37369098833">
+                                    <label for="email"><i class="fa fa-envelope"></i> Enter your email</label>
+                                    <input type="email" id="email" name="email" placeholder="Andrei@mail.ru">
+                                    <label for="address"><em class="fas fa-address-card"></em> Enter your address:</label>
+                                    <input type="text" id="address" name="address" placeholder="Stefan cel Mare 13/108">
+                                    <label for="city"><em class="fas fa-city"></em> Enter your city:</label>
+                                    <input type="text" id="city" name="city" placeholder="Balti">
+                                    <label for="comment"><em class="fas fa-comment"></em> Enter your comment:</label>
+                                    <input type="text" id="comment" name="comment"
+                                        placeholder="Pack the product better please !!!">
+                                    <div class="row">
+                                        <div class="coldelivery">
+                                            <label for="delivery"><em class="fas fa-shipping-fast"></em>
+                                                Delivery</label>
+                                            <select id="delivery" name="delivery">
+                                                <option value="0" selected="selected">Posta Moldovei | 2-3 days | Price:
+                                                    $ 0
+                                                </option>
+                                                <option value="5">DHL | 1-2 days| Price: $ 5</option>
+                                                <option value="10">UPS Express| 1 day | Price: $ 10</option>
+                                            </select>
+                                            <button class="btn1" onclick="goshop()"><em class="fas fa-cart-plus"></em>
+                                                Continue
+                                                shopping</button>
+                                            <button class="btn2" id="order__items"><em class="fa fa-credit-card"></em>
+                                                Purchase
+                                                now</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </section>
                 </div>
             </div>
         </div>

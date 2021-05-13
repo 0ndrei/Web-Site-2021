@@ -394,7 +394,6 @@ body {
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  opacity: 0.8;
   bottom: 23px;
   width: 280px;
 }
@@ -403,7 +402,7 @@ body {
   display: none;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  border: 3px;
   z-index: 9;
 }
 
@@ -413,21 +412,6 @@ body {
   background-color: white;
 }
 
-.form-container input[type="text"],
-.form-container input[type="password"] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-.form-container input[type="text"]:focus,
-.form-container input[type="password"]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
 .form-container .btn {
   color: white;
   padding: 16px 20px;
@@ -435,20 +419,18 @@ body {
   cursor: pointer;
   width: 100%;
   margin-bottom: 10px;
-  opacity: 0.8;
 }
 
 .form-container .cancel {
   background-color: rgb(166, 0, 0);
 }
 
-/* Grid conatct*/
-
 .form-container .btn:hover,
 .open-button:hover {
   opacity: 1;
 }
 
+/* Grid conatct*/
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -499,19 +481,18 @@ iframe {
   margin: 0 -16px;
 }
 
-.col-50 {
+.coldelivery {
   -ms-flex: 50%;
   flex: 50%;
 }
 
-.col-75 {
+.colsection {
   -ms-flex: 75%;
   flex: 75%;
 }
 
-.col-25,
-.col-50,
-.col-75 {
+.coldelivery,
+.colsection {
   padding: 0 16px;
 }
 
