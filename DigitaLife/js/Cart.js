@@ -28,7 +28,7 @@ class Cart {
     }
 
     validationHandler() {
-        const validateButton = document.getElementById('order__items');
+        const validateButton = document.getElementById('deliverybtn');
 
         validateButton.addEventListener('click', () => {
             this.validateData();
