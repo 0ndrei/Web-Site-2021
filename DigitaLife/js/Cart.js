@@ -27,16 +27,16 @@ class Cart {
         }, 0) + this._shippingPrice
     }
 
-    validationHandler() {
+    validationBtn() {
         const validateButton = document.getElementById('deliverybtn');
 
         validateButton.addEventListener('click', () => {
-            this.validateData();
+            this.validateDate();
         })
     }
 
 
-    optionHandler() {
+    optionDelivery() {
         const selector = document.getElementById('delivery');
         selector.onchange = ((evt) => {
             this._shippingPrice = parseInt(evt.target.value);
@@ -44,7 +44,7 @@ class Cart {
         });
     }
 
-    validateData() {
+    validateDate() {
         const full__name = document.getElementById("full__name");
         const phoneNumber = document.getElementById('phone');
         const email = document.getElementById("email");
@@ -103,7 +103,7 @@ class Cart {
         })
     }
 
-    quantityHandler() {
+    quantityMulti() {
         const increaseBtns = document.querySelectorAll(".increase__item");
         const decreaseBtns = document.querySelectorAll(".decrease__item");
 
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cart.showCart();
     cart.showCartCount(cart.getCartQuantity());
     cart.removeMulti();
-    cart.quantityHandler();
-    cart.validationHandler();
-    cart.optionHandler();
+    cart.quantityMulti();
+    cart.validationBtn();
+    cart.optionDelivery();
 });
