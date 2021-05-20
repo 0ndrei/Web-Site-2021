@@ -32,13 +32,12 @@
 .item-container {
   background: white;
   position: relative;
-  background: white;
   padding: 15px 12px;
   position: relative;
 }
 
 .item-container:hover {
-  background: #d4d4d4;
+  background: white;
   transition: all 0.7s ease-in-out;
 }
 
